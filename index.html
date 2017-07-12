@@ -165,32 +165,35 @@
 				
 				<div class="col-lg-1 col-md-1 col-xs-1"></div>
 				
+				<!-- Start Contact Form -->
 				<div id="contact-form" class="item col-lg-4 col-md-4 col-xs-4">
 				
-					<form action="" class="form-horizontal">
+					<form id="myForm" action="" class="form-horizontal" onsubmit="submitForm(); return false;">
 					
-                    <div class="form-group">
-                      <label for="user-name" class="control-label"><b>Name</b></label>
-                      <input type="text" class="form-control" id="user-name" maxlength="30" placeholder="Enter your name">
-                    </div><!-- End form group -->
+						<div class="form-group">
+						<label for="user-name" class="control-label"><b>Name</b></label>
+						<input type="text" class="form-control" id="user-name" maxlength="30" placeholder="Enter your name" required>
+						</div><!-- End form group -->
 
-                    <div class="form-group">
-                      <label for="user-email" class="control-label"><b>Email</b></label>
-                      <input type="text" class="form-control" id="user-email" maxlength="30" placeholder="Enter your Email Address">
-                    </div><!-- End form group -->
+						<div class="form-group">
+						<label for="user-email" class="control-label"><b>Email</b></label>
+						<input type="text" class="form-control" id="user-email" maxlength="30" placeholder="Enter your Email Address" required>
+						</div><!-- End form group -->
 
-                    <div class="form-group">
-                      <label for="user-message" class="control-label"><b>Message</b></label>
-                      <textarea name="user-message" id="user-message" class="form-control" maxlength="200" cols="" rows="6" placeholder="Enter your Message"></textarea>
-                    </div><!-- End form group -->
+						<div class="form-group">
+						<label for="user-message" class="control-label"><b>Message</b></label>
+						<textarea name="user-message" id="user-message" class="form-control" maxlength="200" cols="" rows="6" placeholder="Enter your Message" required></textarea>
+						</div><!-- End form group -->
 
-                    <div class="submit-fall form-group">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+						<div class="submit-fall form-group">
+							<button id="submitBtn" type="submit" class="btn btn-primary" value="submit form">Submit</button>
+							<span id="status"></span>
+						</div>
 					
-                  </form>
+                	</form>
 				  
 				</div>
+				<!--End Contact Form -->
 			
 			</div>
 			<!--Bottom Content-->
