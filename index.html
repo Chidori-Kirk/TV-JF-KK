@@ -3,7 +3,7 @@
 
 	<head>
 
-		<title>Movie Square - Buy Movies and Series</title>
+		<title>Buy the Latest Movies and Series</title>
 		
 		<meta charset="utf-8">
 		<meta name="description" content="A shopping ground for movies!">
@@ -55,7 +55,7 @@
 					</li>
 					
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fa fa-location-arrow">&nbsp;&nbsp;Location</i></a>
+						<a class="nav-link" href="#nav-bar"><div data-toggle="modal" data-target="#locationModal"><i class="fa fa-location-arrow">&nbsp;&nbsp;Location</i></div></a>
 					</li>
 					
 					<li class="nav-item">
@@ -206,7 +206,30 @@
 		</footer>
 		<!--End Footer-->
 		
-		<!--Modals-->
+		<!--****Modals****-->
+		
+		<!--Location-->
+		<div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					
+					<div class="modal-header">
+						<h5 class="modal-title"><i class="fa fa-location-arrow">&nbsp;&nbsp;Location</i></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					
+					<div class="modal-body">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2581.413512353086!2d-87.68074652210076!3d34.80732339908396!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1499892667776" width="100%" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<div class="modal-footer form-group">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Location-->
 		
 		<!--Sign In-->
 		<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -318,7 +341,7 @@
 				<div class="modal-content">
 					
 					<div class="modal-header">
-						<h5 class="modal-title">Contact</h5>
+						<h5 class="modal-title">Contact Us</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
