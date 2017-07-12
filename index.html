@@ -59,6 +59,10 @@
 					</li>
 					
 					<li class="nav-item">
+						<a class="nav-link" href="#nav-bar"><div data-toggle="modal" data-target="#contactModal">Contact</div></a>
+					</li>
+					
+					<li class="nav-item">
 						<a class="nav-link" href="#nav-bar"><div data-toggle="modal" data-target="#signInModal">Sign In</div></a>
 					</li>
 					
@@ -125,19 +129,13 @@
 		
 		<!--Content-->
 		<div id="content" class="container">
-			
-			<!--Bottom Content-->
 			<div class="row">
-				<h3 id="creator-title" class="col-lg-7 col-md-7 col-xs-7">Creators</h3>
-				
-				<div class="col-lg-1 col-md-1 col-xs-1"></div>
-				
-				<h3 id="creator-title" class="contact-title col-lg-4 col-md-4 col-xs-4">Contact</h3>
+				<h3 id="creator-title" class="col-lg-12 col-md-12 col-xs-12">Creators</h3>
 			</div>
 		
 			<div class="row bottom-content">
 			
-				<div id="info" align="center" class="item col-lg-3 col-md-3 col-xs-3">
+				<div id="info" align="center" class="item col-lg-4 col-md-4 col-xs-4">
 					<img id="profile-img" class="img-fluid rounded-circle" src="images/kirk.jpg"/>
 					<h4>Kirk Kratohvil</h4>
 					k.kratohvil@yahoo.com<br>
@@ -149,85 +147,68 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-1 col-md-1 col-xs-1"></div>
-				
-				<div id="info" align="center" class="item col-lg-3 col-md-3 col-xs-3">
+				<div id="info" align="center" class="item col-lg-4 col-md-4 col-xs-4">
 					<img id="profile-img" class="img-fluid rounded-circle" src="images/jake.jpg"/>
 					<h4>Jake Ford</h4>
 					Jake@jakeford.io<br>
 					256-759-3936<br><br>
-					<div class="right">
+					<div class="bottom">
 						<a target="_blank" href="http://jakeford.io/">
+							<button class="btn btn-primary">Personal Website</button>
+						</a>
+					</div>
+				</div>
+				
+				<div id="info" align="center" class="item col-lg-4 col-md-4 col-xs-4">
+					<img id="profile-img" class="img-fluid rounded-circle" src="images/adam.jpg"/>
+					<h4>Adam Risher</h4>
+					aerisher@gmail.com<br>
+					205-936-9743<br><br>
+					<div class="right">
+						<a target="_blank" href="http://adamrisher.me/">
 							<button class="right btn btn-primary">Personal Website</button>
 						</a>
 					</div>
 				</div>
 				
-				<div class="col-lg-1 col-md-1 col-xs-1"></div>
-				
-				<!-- Start Contact Form -->
-				<div id="contact-form" class="item col-lg-4 col-md-4 col-xs-4">
-				
-					<form id="myForm" action="" class="form-horizontal" onsubmit="submitForm(); return false;">
-					
-						<div class="form-group">
-						<label for="user-name" class="control-label"><b>Name</b></label>
-						<input type="text" class="form-control" id="user-name" maxlength="30" placeholder="Enter your name" required>
-						</div><!-- End form group -->
-
-						<div class="form-group">
-						<label for="user-email" class="control-label"><b>Email</b></label>
-						<input type="text" class="form-control" id="user-email" maxlength="30" placeholder="Enter your Email Address" required>
-						</div><!-- End form group -->
-
-						<div class="form-group">
-						<label for="user-message" class="control-label"><b>Message</b></label>
-						<textarea name="user-message" id="user-message" class="form-control" maxlength="200" cols="" rows="6" placeholder="Enter your Message" required></textarea>
-						</div><!-- End form group -->
-
-						<div class="submit-fall form-group">
-							<button id="submitBtn" type="submit" class="btn btn-primary" value="submit form">Submit</button>
-							<span id="status"></span>
-						</div>
-					
-                	</form>
-				  
-				</div>
-				<!--End Contact Form -->
-			
 			</div>
-			<!--Bottom Content-->
-			
 		</div>
 		<!--End Content-->
 
 		<!--Footer-->
-		<footer class="row">
-		
-			<div id="footer-border" class="col-lg-4 col-md-4 col-xs-4">
-				<p>© 2017, Movie Square. All rights reserved.
-			</div>
-			
-			<div id="footer-border" class="col-lg-4 col-md-4 col-xs-4">
-				<p><img id="footer-img" class="img-fluid rounded-circle" src="images/kirk.jpg"/>&nbsp;Kirk Kratohvil</p>
+		<footer>
+			<div id="footer-border-bottom" align="center">© 2017, Movie Square. All rights reserved.</div>
+			<div class="row">
+				<div id="footer-border-right" class="col-lg-4 col-md-4 col-xs-4">
+					<p><img id="footer-img" class="img-fluid rounded-circle" src="images/kirk.jpg"/>&nbsp;Kirk Kratohvil</p>
+					
+					<a target="_blank" id="inherit" href="https://www.facebook.com/jameskirk.kratohvil"><i class="fa fa-facebook-square fa-lg"></i></a>
+					<i class="fa fa-twitter-square fa-lg"></i>
+					<a target="_blank" id="inherit" href="https://www.linkedin.com/in/kirk-kratohvil-90424a113/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+				</div>
 				
-				<i class="fa fa-facebook-square fa-lg"></i>
-				<i class="fa fa-twitter-square fa-lg"></i>
-				<i class="fa fa-linkedin-square fa-lg"></i>
-			</div>
-			
-			<div id=" "class="col-lg-4 col-md-4 col-xs-4">
-				<p><img id="footer-img" class="img-fluid rounded-circle" src="images/jake.jpg"/>&nbsp;Jake Ford</p>
+				<div id="footer-border-right" class="col-lg-4 col-md-4 col-xs-4">
+					<p><img id="footer-img" class="img-fluid rounded-circle" src="images/jake.jpg"/>&nbsp;Jake Ford</p>
+					
+					<a target="_blank" id="inherit" href="https://www.facebook.com/jake.ford.7"><i class="fa fa-facebook-square fa-lg"></i></a>
+					<i class="fa fa-twitter-square fa-lg"></i>
+					<a target="_blank" id="inherit" href="https://www.linkedin.com/in/jakehford/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+				</div>
 				
-				<i class="fa fa-facebook-square fa-lg"></i>
-				<i class="fa fa-twitter-square fa-lg"></i>
-				<i class="fa fa-linkedin-square fa-lg"></i>
+				<div id="footer-border" class="col-lg-4 col-md-4 col-xs-4">
+					<p><img id="footer-img" class="img-fluid rounded-circle" src="images/adam.jpg"/>&nbsp;Adam Risher</p>
+					
+					<a target="_blank" id="inherit" href="https://www.facebook.com/rock.stone.399826"><i class="fa fa-facebook-square fa-lg"></i></a>
+					<i class="fa fa-twitter-square fa-lg"></i>
+					<a target="_blank" id="inherit" href="https://www.linkedin.com/in/adamer/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+				</div>
 			</div>
 		</footer>
 		<!--End Footer-->
 		
 		<!--Modals-->
 		
+		<!--Sign In-->
 		<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -259,7 +240,7 @@
 					<!-- Tab panes -->
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane active modal-body" id="profile">
-							<h5 align="center">Welcome back!</h5>	
+							<h5 id="creator-title" align="center">Welcome back!</h5>	
 							<form action="" class="form-horizontal">
 									
 								<div class="form-group">
@@ -283,7 +264,7 @@
 						</div>
 						
 						<div role="tabpanel" class="tab-pane fade modal-body" id="buzz">
-							<h5 align="center">Create an Account!</h5>		
+							<h5 id="creator-title" align="center">Create an Account!</h5>		
 							<form action="" class="form-horizontal">
 									
 								<div class="form-group">
@@ -308,7 +289,7 @@
 						</div>
 						
 						<div role="tabpanel" class="tab-pane fade modal-body" id="references">
-							<h5 align="center">Forgot your Password?</h5>	
+							<h5 id="creator-title" align="center">Forgot your Password?</h5>	
 							<p>Enter your email address, and we'll send you your current password.</p>		
 							<form action="" class="form-horizontal">
 									
@@ -329,6 +310,52 @@
 				</div>
 			</div>
 		</div>
+		<!--End Sign In-->
+		
+		<!--Contact-->
+		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					
+					<div class="modal-header">
+						<h5 class="modal-title">Contact</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					
+					<div class="modal-body">
+				
+						<form id="myForm" action="" class="form-horizontal" onsubmit="submitForm(); return false;">
+					
+							<div class="form-group">
+								<label for="user-name" class="control-label"><b>Name</b></label>
+								<input type="text" class="form-control" id="user-name" maxlength="30" placeholder="Enter your name" required>
+							</div><!-- End form group -->
+
+							<div class="form-group">
+								<label for="user-email" class="control-label"><b>Email</b></label>
+								<input type="text" class="form-control" id="user-email" maxlength="30" placeholder="Enter your Email Address" required>
+							</div><!-- End form group -->
+
+							<div class="form-group">
+								<label for="user-message" class="control-label"><b>Message</b></label>
+								<textarea name="user-message" id="user-message" class="form-control" maxlength="200" cols="" rows="6" placeholder="Enter your Message" required></textarea>
+							</div><!-- End form group -->
+
+							<div class="modal-footer form-group">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button id="submitBtn" type="submit" class="btn btn-primary" value="submit form">Submit</button>
+								<span id="status"></span>
+							</div>
+					
+						</form>
+				  
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Contact-->
 		
 		<script>
 		
@@ -344,15 +371,15 @@
 			origin:'right',
 			distance:'100px'
 		});
+		sr.reveal('.bottom', {
+			duration: 2000,
+			origin:'bottom',
+			distance:'100px'
+		});
 		sr.reveal('.item', {
 			duration: 2000,
 			origin:'bottom'
 		});
-		sr.reveal('.submit-fall', {
-          duration: 2000,
-          origin:'top',
-		  distance:'200px'
-        });
 		$('.carousel').carousel({
 		    interval: 5000,
 			pause: false
