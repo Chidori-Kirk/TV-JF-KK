@@ -59,6 +59,10 @@
 				font-size: 20px;
 			
 			}
+			
+			#footer-bottom {
+				margin-top: 2%;
+			}
 		
 		}
 		
@@ -96,5 +100,5 @@
 		}
 		
 		.social-media-footer {
-			margin-bottom: 2%;
+			margin-bottom: 4%;
 		}
