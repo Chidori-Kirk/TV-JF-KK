@@ -54,6 +54,11 @@
 			#footer-border {
 				margin-bottom: 5%;
 			}
+			
+			.slider-title {
+				font-size: 20px;
+			
+			}
 		
 		}
 		
@@ -88,4 +93,8 @@
 		  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
 		  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
 		  filter: brightness(1.10) grayscale(100%); 
+		}
+		
+		.social-media-footer {
+			margin-bottom: 2%;
 		}

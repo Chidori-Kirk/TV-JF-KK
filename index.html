@@ -39,9 +39,7 @@
 	<body style="background-color: #F2F2F2;">
 		
 		<!--Ad Space-->
-		<div class="item" style="text-align: center; margin-top: 1%; margin-bottom: 1%;">
-			<img src="images/ad-placeholder.png"/>
-		</div>
+		
 		
 		<!--Navigation-->
 		<nav id="navbar" class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top" style="background-color: white;">
@@ -127,22 +125,22 @@
 		
 		<!--Movies-->
 		<div class="item container" style="margin-top: 7%; margin-bottom: 1%;">
-			<h4>Movie Releases on DVD & Blu-ray</h4>
+			<h4 class="slider-title">Movie Releases on DVD & Blu-ray</h4>
 			<div id="movies" class="flexslider">
 			  <ul class="slides">
 				<li>
 					<div class="slide-hover">
-						<img id="slide-images" src="images/mummylist.jpg" />
-					</div>
-				</li>
-				<li>
-					<div class="slide-hover">
-						<img id="slide-images" src="images/getlist.jpg" />
-					</div>
-				</li>
-				<li>
-					<div class="slide-hover">
 						<img id="slide-images" src="images/rogue.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/suicide.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/mummylist.jpg" />
 					</div>
 				</li>
 				<li>
@@ -172,7 +170,7 @@
 				</li>
 				<li>
 					<div class="slide-hover">
-						<img id="slide-images" src="images/suicide.jpg" />
+						<img id="slide-images" src="images/getlist.jpg" />
 					</div>
 				</li>
 				<li>
@@ -186,7 +184,7 @@
 		
 		<!--Series-->
 		<div class="item container" style="margin-top: 3%; margin-bottom: 1%;">
-			<h4>Series Releases on DVD & Blu-ray</h4>
+			<h4 class="slider-title">Series Releases on DVD & Blu-ray</h4>
 			<div id="series" class="flexslider">
 			  <ul class="slides">
 				<li>
@@ -302,26 +300,29 @@
 			<div class="row">
 				<div id="footer-border-right" class="col-lg-4 col-md-4 col-xs-4">
 					<p><img id="footer-img" class="img-fluid rounded-circle" src="images/kirk.jpg"/>&nbsp;Kirk Kratohvil</p>
-					
-					<a target="_blank" id="inherit" href="https://www.facebook.com/jameskirk.kratohvil"><i class="fa fa-facebook-square fa-lg"></i></a>
-					<i class="fa fa-twitter-square fa-lg"></i>
-					<a target="_blank" id="inherit" href="https://www.linkedin.com/in/kirk-kratohvil-90424a113/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+					<div class="social-media-footer">
+						<a target="_blank" id="inherit" href="https://www.facebook.com/jameskirk.kratohvil"><i class="fa fa-facebook-square fa-lg"></i></a>
+						<i class="fa fa-twitter-square fa-lg"></i>
+						<a target="_blank" id="inherit" href="https://www.linkedin.com/in/kirk-kratohvil-90424a113/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+					</div>
 				</div>
 				
 				<div id="footer-border-right" class="col-lg-4 col-md-4 col-xs-4">
 					<p><img id="footer-img" class="img-fluid rounded-circle" src="images/jake.jpg"/>&nbsp;Jake Ford</p>
-					
-					<a target="_blank" id="inherit" href="https://www.facebook.com/jake.ford.7"><i class="fa fa-facebook-square fa-lg"></i></a>
-					<i class="fa fa-twitter-square fa-lg"></i>
-					<a target="_blank" id="inherit" href="https://www.linkedin.com/in/jakehford/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+					<div class="social-media-footer">
+						<a target="_blank" id="inherit" href="https://www.facebook.com/jake.ford.7"><i class="fa fa-facebook-square fa-lg"></i></a>
+						<i class="fa fa-twitter-square fa-lg"></i>
+						<a target="_blank" id="inherit" href="https://www.linkedin.com/in/jakehford/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+					</div>
 				</div>
 				
 				<div id="footer-border" class="col-lg-4 col-md-4 col-xs-4">
 					<p><img id="footer-img" class="img-fluid rounded-circle" src="images/adam.jpg"/>&nbsp;Adam Risher</p>
-					
-					<a target="_blank" id="inherit" href="https://www.facebook.com/rock.stone.399826"><i class="fa fa-facebook-square fa-lg"></i></a>
-					<i class="fa fa-twitter-square fa-lg"></i>
-					<a target="_blank" id="inherit" href="https://www.linkedin.com/in/adamer/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+					<div class="social-media-footer">
+						<a target="_blank" id="inherit" href="https://www.facebook.com/rock.stone.399826"><i class="fa fa-facebook-square fa-lg"></i></a>
+						<i class="fa fa-twitter-square fa-lg"></i>
+						<a target="_blank" id="inherit" href="https://www.linkedin.com/in/adamer/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -568,37 +569,6 @@
 			pause: false
 		});
 		</script>
-		
-		<style>
-		#slide-images {
-			width: 100%;
-			height: 100%;
-		}
-		
-		.slide-hover img {
-			-webkit-transition: all .3s ease; /* Safari and Chrome */
-			-moz-transition: all .3s ease; /* Firefox */
-			-o-transition: all .3s ease; /* IE 9 */
-			-ms-transition: all .3s ease; /* Opera */
-			transition: all .3s ease;
-		}
-		.slide-hover img:hover {
-			-webkit-backface-visibility: hidden;
-			backface-visibility: hidden;
-			-webkit-transform:translateZ(0) scale(1.04); /* Safari and Chrome */
-			-moz-transform:scale(1.04); /* Firefox */
-			-ms-transform:scale(1.04); /* IE 9 */
-			-o-transform:translatZ(0) scale(1.04); /* Opera */
-			transform:translatZ(0) scale(1.04);
-		}
-		  
-		  
-		.grayscale {
-		  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
-		  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
-		  filter: brightness(1.10) grayscale(100%); 
-		}
-		</style>
 		
 	</body>
 
