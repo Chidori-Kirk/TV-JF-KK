@@ -129,7 +129,7 @@
 			<div id="movies" class="flexslider">
 			  <ul class="slides">
 				<li>
-					<div class="slide-hover">
+					<div class="slide-hover" data-toggle="modal" data-target="#rogueOneModal">
 						<img id="slide-images" src="images/rogue.jpg" />
 					</div>
 				</li>
@@ -501,6 +501,92 @@
 			</div>
 		</div>
 		<!--End Contact-->
+		
+		<!--Rogue One-->
+		<div class="modal fade" id="rogueOneModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+								
+						<ul class="nav nav-tabs" role="tablist">
+									
+							<li class="nav-item">
+								<a class="nav-link active" href="#roguePlot" role="tab" data-toggle="tab">Movie</a>
+							</li>
+									
+							<li class="nav-item">
+								<a class="nav-link" href="#rogueCast" role="tab" data-toggle="tab">Cast & Crew</a>
+							</li>
+									
+							<li class="nav-item">
+								<a class="nav-link" href="#rogueReviews" role="tab" data-toggle="tab">Reviews</a>
+							</li>
+									
+						</ul>
+						
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+							
+					</div>
+							
+						
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active modal-body" id="roguePlot">
+							<h5 id="creator-title" align="center">Rogue One: A Star Wars Story</h5>	
+							<form action="" class="form-horizontal">
+								
+								<div class="row">
+									<p id="movieInfo" ><kbd>DVD</kbd>&nbsp;&nbsp;&nbsp;&nbsp;<kbd>BD</kbd>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<kbd>PG-13</kbd>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;2h 13m</p>
+								</div>
+								
+								<div class="row">								
+									<div class="col-lg-5">
+										<img id="moviePictureModal" class="img-responsive"src="images/rogue.jpg" />
+									</div>
+									
+									<div class="col-lg-7">
+										<p id="plotText" ><b>Plot:</b> In a time of conflict, a group of unlikely heroes band
+										together on a mission to steal the plans to the Death Star, the
+										Empire’s ultimate weapon of destruction. This key event in 
+										the Star Wars timeline brings together ordinary people who
+										choose to do extraordinary things, and in doing so, become 
+										part of something greater than themselves.<br><br>
+										Rated PG-13 by the Motion Picture Association of America for
+										extended sequences of sci-fi violence and action.
+										</p>
+									</div>
+								</div>
+								
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Purchase</button>
+								</div>
+																
+							</form>
+								
+						</div>
+						
+						<div role="tabpanel" class="tab-pane fade modal-body" id="rogueCast">
+							<h5 id="creator-title" align="center">Directors</h5>
+							<p><b>Gareth Edwards</b></p>
+							
+							<h5 id="creator-title" align="center">Actors</h5>
+							<p><b>Felicity Jones<br> Diego Luna<br> Alan Tudyk<br> Donnie Yen<br> Wen Jiang</b></p>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane fade modal-body" id="rogueReviews">
+							<h5 id="creator-title" align="center">Reviews</h5>	
+							<p>None so far!</p>
+
+						</div>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Rogue One-->
 		
 		<script>
 		$(window).load(function(){
