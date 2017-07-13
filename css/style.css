@@ -3,7 +3,7 @@
 			margin-top: 3%;
 		}
 		
-		h4 {
+		#about-title {
 			text-align: center;
 			margin-top: 2%;
 		}
@@ -59,4 +59,33 @@
 		
 		#inherit {
 			color: inherit;
+		}
+		
+		#slide-images {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.slide-hover img {
+			-webkit-transition: all .3s ease; /* Safari and Chrome */
+			-moz-transition: all .3s ease; /* Firefox */
+			-o-transition: all .3s ease; /* IE 9 */
+			-ms-transition: all .3s ease; /* Opera */
+			transition: all .3s ease;
+		}
+		.slide-hover img:hover {
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-webkit-transform:translateZ(0) scale(1.04); /* Safari and Chrome */
+			-moz-transform:scale(1.04); /* Firefox */
+			-ms-transform:scale(1.04); /* IE 9 */
+			-o-transform:translatZ(0) scale(1.04); /* Opera */
+			transform:translatZ(0) scale(1.04);
+		}
+		  
+		  
+		.grayscale {
+		  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+		  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+		  filter: brightness(1.10) grayscale(100%); 
 		}

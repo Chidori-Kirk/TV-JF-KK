@@ -15,6 +15,9 @@
 		<!--External CSS-->
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 		
+		<!-- Syntax Slider Highlighter -->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+		
 		<!--Bootstrap-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		
@@ -25,6 +28,11 @@
 		
 		<!--Fade In JavaScript-->
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+		<!--Thumnail Slider Script-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script defer src="js/jquery.flexslider.js"></script>
+		<script src="js/modernizr.js"></script>
 		
 	</head>
 	
@@ -118,13 +126,126 @@
 		<!--End Carousel-->
 		
 		<!--Movies-->
-		<div class="item" style="text-align: center; margin-top: 7%; margin-bottom: 1%;">
-			<img src="images/movie-placeholder.png"/>
+		<div class="item container" style="margin-top: 7%; margin-bottom: 1%;">
+			<h4>Movie Releases on DVD & Blu-ray</h4>
+			<div id="movies" class="flexslider">
+			  <ul class="slides">
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/mummylist.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/getlist.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/rogue.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/sinister.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/jungle.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/sky.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/martian.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/star.jpg" />
+					<div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/suicide.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/sausage.jpg" />
+					</div>
+				</li>
+			  </ul>
+			</div>
 		</div>
 		
 		<!--Series-->
-		<div class="item" style="text-align: center; margin-top: 3%; margin-bottom: 1%;">
-			<img src="images/series-placeholder.png"/>
+		<div class="item container" style="margin-top: 3%; margin-bottom: 1%;">
+			<h4>Series Releases on DVD & Blu-ray</h4>
+			<div id="series" class="flexslider">
+			  <ul class="slides">
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/game.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/walkinglist.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/oitnb.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/breakinglist.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/arrow.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/theoffice.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/parks.jpg" />
+					<div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/rick.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/family.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/flash.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="slide-hover">
+						<img id="slide-images" src="images/stranger.jpg" />
+					</div>
+				</li>
+			  </ul>
+			</div>
 		</div>
 		
 		<!--Content-->
@@ -137,7 +258,7 @@
 			
 				<div id="info" align="center" class="item col-lg-4 col-md-4 col-xs-4">
 					<img id="profile-img" class="img-fluid rounded-circle" src="images/kirk.jpg"/>
-					<h4>Kirk Kratohvil</h4>
+					<h4 id="about-title">Kirk Kratohvil</h4>
 					k.kratohvil@yahoo.com<br>
 					256-702-6266<br><br>
 					<div class="left">
@@ -149,7 +270,7 @@
 				
 				<div id="info" align="center" class="item col-lg-4 col-md-4 col-xs-4">
 					<img id="profile-img" class="img-fluid rounded-circle" src="images/jake.jpg"/>
-					<h4>Jake Ford</h4>
+					<h4 id="about-title">Jake Ford</h4>
 					Jake@jakeford.io<br>
 					256-759-3936<br><br>
 					<div class="bottom">
@@ -161,7 +282,7 @@
 				
 				<div id="info" align="center" class="item col-lg-4 col-md-4 col-xs-4">
 					<img id="profile-img" class="img-fluid rounded-circle" src="images/adam.jpg"/>
-					<h4>Adam Risher</h4>
+					<h4 id="about-title">Adam Risher</h4>
 					aerisher@gmail.com<br>
 					205-936-9743<br><br>
 					<div class="right">
@@ -381,6 +502,45 @@
 		<!--End Contact-->
 		
 		<script>
+		$(window).load(function(){
+		  $('#movies').flexslider({
+			animation: "slide",
+			controlNav: false,
+			animationLoop: false,
+			slideshow: false,
+			itemWidth: 290,
+			itemMargin: 5,
+			asNavFor: '#slider'
+		  });
+
+		  $('#slider').flexslider({
+			animation: "slide",
+			controlNav: false,
+			animationLoop: false,
+			slideshow: false,
+			sync: "#movies",
+			
+		  });
+		  
+		  $('#series').flexslider({
+			animation: "slide",
+			controlNav: false,
+			animationLoop: false,
+			slideshow: false,
+			itemWidth: 290,
+			itemMargin: 5,
+			asNavFor: '#slider'
+		  });
+
+		  $('#slider').flexslider({
+			animation: "slide",
+			controlNav: false,
+			animationLoop: false,
+			slideshow: false,
+			sync: "#series",
+			
+		  });
+		});
 		
 		window.sr = ScrollReveal();
 		
@@ -408,6 +568,37 @@
 			pause: false
 		});
 		</script>
+		
+		<style>
+		#slide-images {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.slide-hover img {
+			-webkit-transition: all .3s ease; /* Safari and Chrome */
+			-moz-transition: all .3s ease; /* Firefox */
+			-o-transition: all .3s ease; /* IE 9 */
+			-ms-transition: all .3s ease; /* Opera */
+			transition: all .3s ease;
+		}
+		.slide-hover img:hover {
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-webkit-transform:translateZ(0) scale(1.04); /* Safari and Chrome */
+			-moz-transform:scale(1.04); /* Firefox */
+			-ms-transform:scale(1.04); /* IE 9 */
+			-o-transform:translatZ(0) scale(1.04); /* Opera */
+			transform:translatZ(0) scale(1.04);
+		}
+		  
+		  
+		.grayscale {
+		  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+		  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+		  filter: brightness(1.10) grayscale(100%); 
+		}
+		</style>
 		
 	</body>
 
