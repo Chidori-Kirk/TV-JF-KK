@@ -42,7 +42,15 @@
 			border-bottom: 1px solid white;
 		}
 		
+		@media (max-width : 991.5px) {
+			#moviePictureModal {
+				display: none;
+			}
+			
+		}
+		
 		@media (max-width : 767.5px) {
+			
 			.contact-title {
 				visibility: hidden;
 			}
@@ -63,7 +71,7 @@
 			#footer-bottom {
 				margin-top: 2%;
 			}
-		
+			
 		}
 		
 		#inherit {
@@ -102,3 +110,18 @@
 		.social-media-footer {
 			margin-bottom: 4%;
 		}
+		
+		#moviePictureModal {
+			margin-left: 2%; 
+			width: 300px; 
+			height: 180px;
+		}
+		
+		#plotText {
+			margin-left: 2%;
+		}
+		
+		#movieInfo {
+			margin-left: 3%;
+		}
+		
