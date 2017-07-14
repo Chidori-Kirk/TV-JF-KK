@@ -53,7 +53,7 @@
 				<ul class="navbar-nav mr-auto mt-2 mt-md-0">
 				
 					<li class="nav-item">
-						<a class="nav-link" href="#">DVD & BLU-RAY</a>
+						<a class="nav-link" href="#nav-bar"><div data-toggle="modal" data-target="#moviesAndSeriesModal">DVD & BLU-RAY</div></a>
 					</li>
 					
 					<li class="nav-item">
@@ -125,7 +125,7 @@
 		
 		<!--Movies-->
 		<div class="item container" style="margin-top: 7%; margin-bottom: 1%;">
-			<h4 class="slider-title">Movie Releases on DVD & Blu-ray</h4>
+			<h4 class="slider-title">Movie Releases on DVD & Blu-ray <a style="text-decoration: none;" href="#nav-bar"><small data-toggle="modal" data-target="#moviesAndSeriesModal" style="color: red">See All</small></a></h4>
 			<div id="movies" class="flexslider">
 			  <ul class="slides">
 				<li class="slide-hover" data-toggle="modal" data-target="#rogueOneModal">
@@ -182,7 +182,7 @@
 		
 		<!--Series-->
 		<div class="item container" style="margin-top: 3%; margin-bottom: 1%;">
-			<h4 class="slider-title">Series Releases on DVD & Blu-ray</h4>
+			<h4 class="slider-title">Series Releases on DVD & Blu-ray <a style="text-decoration: none;" href="#nav-bar"><small data-toggle="modal" data-target="#moviesAndSeriesModal" style="color: red">See All</small></a></h4>
 			<div id="series" class="flexslider">
 			  <ul class="slides">
 				<li>
@@ -233,11 +233,6 @@
 				<li>
 					<div class="slide-hover">
 						<img id="slide-images" src="images/flash.jpg" />
-					</div>
-				</li>
-				<li>
-					<div class="slide-hover">
-						<img id="slide-images" src="images/stranger.jpg" />
 					</div>
 				</li>
 			  </ul>
@@ -327,6 +322,233 @@
 		<!--End Footer-->
 		
 		<!--****Modals****-->
+		
+		<!--Movies and Series-->
+		<div class="modal fade" id="moviesAndSeriesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					
+					<div class="modal-header">
+						<h5 class="modal-title">Movies and Series</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					
+					<div class="modal-body">
+						
+						<h5 class="container page-header">Movies</h5>
+						<div class="row container">
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6" data-dismiss="modal" data-toggle="modal" data-target="#rogueOneModal">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/rogue.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/suicide.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/mummylist.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/sinister.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/jungle.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/sky.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/martian.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/star.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/get.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/sausage.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/alien.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/arrival.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/beauty.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/dont.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/dun.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/fist.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/getout.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/krampus.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/passengers.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/rings.jpg" />
+								</div>
+							</div>
+							
+						</div>
+						
+						<h5 id="seriesTitleModal" class="container page-header">Series</h5>
+						<div class="row container">
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/game.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/walkinglist.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/oitnb.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/breakinglist.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/arrow.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/theoffice.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/parks.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/rick.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/family.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/flash.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/stranger.jpg" />
+								</div>
+							</div>
+							
+							<div id="moviesAndSeriesImages" class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="slide-hover">
+									<img id="slide-images" src="images/supernatural.jpg" />
+								</div>
+							</div>
+							
+						</div>
+						
+						<div id="moviesAndSeriesImages" class="modal-footer form-group">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<!--End Movies and Series-->
 		
 		<!--Location-->
 		<div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -565,12 +787,8 @@
 								</div>
 								
 								<div class="modal-footer">
-									<button id="closeButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button id="desktopMovieButton" type="button" class="btn btn-secondary"><i class="fa fa-heart">&nbsp;&nbsp;Add to Wishlist</i></button>
-									<button id="responsiveMovieButton" type="button" class="btn btn-secondary"><i class="fa fa-heart"></i></button>
-									<button id="desktopMovieButton" type="button" class="btn btn-primary">Buy DVD $10.99+</button>
+									<button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#moviesAndSeriesModal">Movies</button>
 									<button id="responsiveMovieButton" type="button" class="btn btn-primary">DVD $10.99</button>
-									<button id="desktopMovieButton" type="button" class="btn btn-primary">Buy Blu-ray $11.99+</button>
 									<button id="responsiveMovieButton" type="button" class="btn btn-primary">Blu-ray $11.99</button>
 								</div>
 																
@@ -626,6 +844,16 @@
 			#responsiveMovieButton {
 				display: block;
 			}
+		}
+		
+		#moviesAndSeriesImages {
+			margin-bottom: 2%;
+		}
+		
+		.page-header{
+			padding-bottom: 9px;
+			margin: 0 0 20px;
+			border-bottom: 1px solid #eee;
 		}
 		</style>
 		
