@@ -513,11 +513,15 @@
 							</li>
 									
 							<li class="nav-item">
-								<a class="nav-link" href="#rogueCast" role="tab" data-toggle="tab">Cast & Crew</a>
+								<a class="nav-link" href="#rogueCast" role="tab" data-toggle="tab">Cast</a>
 							</li>
 									
 							<li class="nav-item">
 								<a class="nav-link" href="#rogueReviews" role="tab" data-toggle="tab">Reviews</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="#rogueTrailer" role="tab" data-toggle="tab">Trailer</a>
 							</li>
 									
 						</ul>
@@ -536,7 +540,10 @@
 							<form action="" class="form-horizontal">
 								
 								<div class="row">
-									<p id="movieInfo" ><kbd>DVD</kbd>&nbsp;&nbsp;&nbsp;&nbsp;<kbd>BD</kbd>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<kbd>PG-13</kbd>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;2h 13m</p>
+									<div class="col-md-9">
+										<p id="movieInfo" ><kbd>DVD</kbd>&nbsp;&nbsp;&nbsp;&nbsp;<kbd>BD</kbd>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<kbd>PG-13</kbd>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;2h 13m</p>
+									</div>
+									
 								</div>
 								
 								<div class="row">								
@@ -558,10 +565,13 @@
 								</div>
 								
 								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-secondary"><i class="fa fa-heart">&nbsp;&nbsp;Add to Wish List</i></button>
-									<button type="button" class="btn btn-primary">Buy DVD $10.99+</button>
-									<button type="button" class="btn btn-primary">Buy Blu-ray $11.99+</button>
+									<button id="closeButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button id="desktopMovieButton" type="button" class="btn btn-secondary"><i class="fa fa-heart">&nbsp;&nbsp;Add to Wishlist</i></button>
+									<button id="responsiveMovieButton" type="button" class="btn btn-secondary"><i class="fa fa-heart"></i></button>
+									<button id="desktopMovieButton" type="button" class="btn btn-primary">Buy DVD $10.99+</button>
+									<button id="responsiveMovieButton" type="button" class="btn btn-primary">DVD $10.99</button>
+									<button id="desktopMovieButton" type="button" class="btn btn-primary">Buy Blu-ray $11.99+</button>
+									<button id="responsiveMovieButton" type="button" class="btn btn-primary">Blu-ray $11.99</button>
 								</div>
 																
 							</form>
@@ -575,25 +585,16 @@
 							<h5 id="creator-title" align="center">Actors</h5>
 							<p><b>Felicity Jones<br> Diego Luna<br> Alan Tudyk<br> Donnie Yen<br> Wen Jiang</b></p>
 							
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-secondary"><i class="fa fa-heart">&nbsp;&nbsp;Add to Wish List</i></button>
-								<button type="button" class="btn btn-primary">Buy DVD $10.99+</button>
-								<button type="button" class="btn btn-primary">Buy Blu-ray $11.99+</button>
-							</div>
 						</div>
 						
 						<div role="tabpanel" class="tab-pane fade modal-body" id="rogueReviews">
 							<h5 id="creator-title" align="center">Reviews</h5>	
 							<p>None so far!</p>
-							
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-secondary"><i class="fa fa-heart">&nbsp;&nbsp;Add to Wish List</i></button>
-								<button type="button" class="btn btn-primary">Buy DVD $10.99+</button>
-								<button type="button" class="btn btn-primary">Buy Blu-ray $11.99+</button>
-							</div>
 
+						</div>
+						
+						<div role="tabpanel" class="tab-pane fade modal-body" id="rogueTrailer">
+							<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/frdj1zb9sMY?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 						</div>
 				
 					</div>
@@ -601,6 +602,32 @@
 			</div>
 		</div>
 		<!--End Rogue One-->
+		
+		<style>
+		@media (max-width : 991.5px) {
+			#moviePictureModal {
+				margin-left: 18%;
+				margin-right: 18%;
+				margin-bottom: 2%;
+			}
+			
+			#movieInfo {
+				margin-left: 22%;
+			}
+			
+			#closeButton {
+				display: none;
+			}
+			
+			#desktopMovieButton {
+				display: none;
+			}
+			
+			#responsiveMovieButton {
+				display: block;
+			}
+		}
+		</style>
 		
 		<script>
 		$(window).load(function(){
