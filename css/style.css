@@ -1,5 +1,13 @@
-
-		.bottom-content {
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+		
+.bottom-content {
 			margin-top: 3%;
 		}
 		
@@ -18,9 +26,9 @@
 		}
 		
 		nav{
-			-webkit-box-shadow: 0 8px 6px -6px #999;
-   			-moz-box-shadow: 0 8px 6px -6px #999;
-    		box-shadow: 0 8px 6px -6px #999;
+			-webkit-box-shadow: 0 4px 6px -2px #999;
+   			-moz-box-shadow: 0 4px 6px -2px #999;
+    		box-shadow: 0 4px 6px -2px #999;
 		}
 
 		footer {
